@@ -21,6 +21,8 @@ export const OptionBtn = styled.button`
   border: 1px solid ${({ theme: { colors } }) => colors.textTitle};
   padding: 7px;
   border-radius: 5px;
+  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1), color 300ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  
   :hover,
   :focus {
     outline: none;
@@ -58,5 +60,6 @@ export const OptionBtn = styled.button`
   svg {
     width: 20px;
     height: 20px;
+    transition: scale 300ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 `;

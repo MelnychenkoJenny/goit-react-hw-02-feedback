@@ -18,4 +18,8 @@ font-family: "StyleScript-Regular";
 font-size: 70px;
 color: ${({theme: {colors}}) => colors.textTitle};
 text-shadow: ${({theme: {colors}}) => colors.textShadow};
+transition: scale 500ms cubic-bezier(0.4, 0, 0.2, 1);
+:hover {
+  scale: 1.25;
+}
 `
