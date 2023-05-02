@@ -1,0 +1,62 @@
+import styled from 'styled-components';
+
+export const OptionList = styled.ul`
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+`;
+
+export const OptionBtn = styled.button`
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  min-width: 70px;
+  cursor: pointer;
+  text-transform: capitalize;
+  background-color: transparent;
+  border: 1px solid ${({ theme: { colors } }) => colors.textTitle};
+  padding: 7px;
+  border-radius: 5px;
+  :hover,
+  :focus {
+    outline: none;
+    box-shadow: ${({ theme: { colors } }) => colors.shadow};
+    background-color: ${({ typeName, theme: { colors } }) => {
+      switch (typeName) {
+        case 'good':
+          return colors.lightGreen;
+        case 'neutral':
+          return colors.lightYellow;
+        case 'bad':
+          return colors.lightRed;
+        default:
+          return colors.textTitle;
+      }
+    }};
+    color: ${({ typeName, theme: { colors } }) => {
+      switch (typeName) {
+        case 'good':
+          return colors.green;
+        case 'neutral':
+          return colors.yellow;
+        case 'bad':
+          return colors.red;
+        default:
+          return colors.textTitle;
+      }
+    }};
+  }
+  :hover svg,
+  :focus svg {
+    scale: 1.25;
+  }
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+`;
