@@ -6,6 +6,8 @@ display: flex;
   align-items: center;
   padding-top: 30px;
   padding-bottom: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
   color: ${({theme: {colors}}) => colors.text};
 
 `;
