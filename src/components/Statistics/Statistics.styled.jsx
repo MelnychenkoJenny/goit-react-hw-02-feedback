@@ -20,7 +20,7 @@ export const StatisticsItem = styled.li`
     background-color: ${({ children, theme: { colors } }) =>
       children[1] >= 40
         ? colors.lightGreen
-        : children[1] < 39 && children[1] >= 18
+        : children[1] < 40 && children[1] >= 18
         ? colors.lightYellow
         : children[1] < 18 && children[1] !== 0
         ? colors.lightRed
@@ -28,7 +28,7 @@ export const StatisticsItem = styled.li`
     color: ${({ children, theme: { colors } }) =>
       children[1] >= 40
         ? colors.green
-        : children[1] < 39 && children[1] >= 18
+        : children[1] < 40 && children[1] >= 18
         ? colors.yellow
         : children[1] < 18 && children[1] !== 0
         ? colors.red
