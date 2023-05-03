@@ -17,7 +17,7 @@ margin-top: 0;
 margin-bottom: 30px;
 padding: 0;
 font-family: "StyleScript-Regular";
-font-size: 70px;
+font-size: 66px;
 color: ${({theme: {colors}}) => colors.textTitle};
 text-shadow: ${({theme: {colors}}) => colors.textShadow};
 transition: scale 500ms cubic-bezier(0.4, 0, 0.2, 1);
