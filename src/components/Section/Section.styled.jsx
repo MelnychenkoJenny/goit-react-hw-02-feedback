@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const SectionContainer = styled.section`
-  max-width: 380px;
+  max-width: 370px;
   padding: 20px;
   text-align: center;
   background-color: ${({ theme: { colors } }) => colors.sectionCard};
