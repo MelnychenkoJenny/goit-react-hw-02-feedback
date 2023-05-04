@@ -6,11 +6,19 @@ import { Statistics } from 'components/Statistics';
 import {Notification} from 'components/Notification'
 
 export class App extends Component {
-  state = {
-    good: 0,
-    neutral: 0,
-    bad: 0,
-  };
+
+  constructor() {
+    super();
+    this.state = {good: 0,
+      neutral: 0,
+      bad: 0,}
+  }
+
+  // state = {
+  //   good: 0,
+  //   neutral: 0,
+  //   bad: 0,
+  // };
 
   onUpdateStatus = option => {
     this.setState(prevState => ({
