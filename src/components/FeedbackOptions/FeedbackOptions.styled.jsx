@@ -7,6 +7,8 @@ export const OptionList = styled.ul`
   list-style: none;
   justify-content: space-around;
   align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
 `;
 
 export const OptionBtn = styled.button`
@@ -21,8 +23,10 @@ export const OptionBtn = styled.button`
   border: 1px solid ${({ theme: { colors } }) => colors.textTitle};
   padding: 7px;
   border-radius: 5px;
-  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1), color 300ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);
-  
+  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);
+
   :hover,
   :focus {
     outline: none;
@@ -36,7 +40,7 @@ export const OptionBtn = styled.button`
         case 'bad':
           return colors.lightRed;
         default:
-          return colors.textTitle;
+          return colors.lightYellow;
       }
     }};
     color: ${({ typeName, theme: { colors } }) => {

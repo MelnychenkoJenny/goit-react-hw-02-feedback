@@ -1,4 +1,4 @@
-import styled,  { keyframes } from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 const heartbeat = keyframes`
 0% {
@@ -10,20 +10,20 @@ const heartbeat = keyframes`
   40% {
     transform: scale(1.5);
   }
-`
+`;
 
 export const MessageText = styled.p`
-margin: 0;
-padding: 0;
-display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
 
-    svg {
-        width: 40px;
-        height: 40px;
-        fill: ${({ theme: { colors } }) => colors.textTitle};
-        animation: ${heartbeat} 1s infinite;
-    }
-`
+  svg {
+    width: 40px;
+    height: 40px;
+    fill: ${({ theme: { colors } }) => colors.textTitle};
+    animation: ${heartbeat} 1s infinite;
+  }
+`;
